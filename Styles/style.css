@@ -1,4 +1,4 @@
-
+/* all fonts */
 .inter-regular> {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -11,6 +11,14 @@
   font-style: bold;
   font-variation-settings:
     "wdth" 100;
+}
+/* shared styles */
+.btn{
+    color: white;
+    background-color: #E95A08;
+    padding: 26px 50px;
+    width: 270px;
+    border: none;
 }
 
 
@@ -31,4 +39,43 @@
     display: flex;
     margin: 100px;
     align-items: center;
+}
+
+/* our plants styles */
+.our-plants-main{
+    justify-items: center;
+    text-align: center;
+}
+
+.our-plants-card-1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.our-plants-card-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* plants lover styles */
+.plant-lover-main{
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* latest deals styles */
+
+
+/* join section styles*/
+.join-bunch{
+    background-image: url("../Images/news-letter-bg.png");
+    height: 530px;
+}
+.join-field-section{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
 }
