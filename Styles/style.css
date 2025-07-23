@@ -1,0 +1,18 @@
+
+
+
+
+/* navber styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 100px;
+}
+.nav-links{
+    text-decoration: none;
+}
+/* banner styles */
+.banner{
+    display: flex;
+}
