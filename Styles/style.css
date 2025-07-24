@@ -16,12 +16,25 @@
 .btn{
     color: white;
     background-color: #E95A08;
-    padding: 26px 50px;
+    padding: auto 50px;
     width: 270px;
+    height: 50px;
     border: none;
+    text-align: center;
 }
-
-
+p{
+    font-size: 1.20rem;
+    
+}
+span{
+    color: #E95A08;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
 /* navber styles */
 .navbar{
     display: flex;
@@ -46,16 +59,12 @@
     justify-items: center;
     text-align: center;
 }
-.first-row-card{
-    
+.card{
+    width: 270px;
+    height: 484px;
 }
 
-.our-plants-card-1{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-.our-plants-card-2{
+.our-plants-card{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -119,28 +128,27 @@
 .join-bunch{
     background-image: url("../Images/news-letter-bg.png");
     height: 530px;
-}
-.join-field-section{
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 /* footer styles */
 .footer-main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 50px 100px;
+    display: flex;
+    margin: 50px;
+    justify-content: space-evenly;
 }
 .footer-links{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    display: flex;
 }
 .footer-link{
-    text-decoration: none; 
+    text-decoration: none;
+    color: black; 
+}
+.footer-links ul li{
+    list-style: none;   
 }
 .social-icon{
-    padding: 20px;
     
 }
