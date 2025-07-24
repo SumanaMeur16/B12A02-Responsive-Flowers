@@ -46,6 +46,9 @@
     justify-items: center;
     text-align: center;
 }
+.first-row-card{
+    
+}
 
 .our-plants-card-1{
     display: grid;
@@ -62,10 +65,54 @@
 .plant-lover-main{
     margin: 100px;
     display: flex;
-    justify-content: space-evenly;
+    
+}
+.plant-lover-content{
+
+}
+.plant-lover-image{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: -15%;
+    left: 95%;
+    transform: translate(-50%);
+    width: 210px;
 }
 
 /* latest deals styles */
+.latest-deal-content{
+    justify-items: center;
+    text-align: center;
+}
+.deal-images{
+    display: flex;
+    margin: 80px 100px;
+    gap: 20px;
+}
+.deal-image{
+    border-radius: 20px;
+}
+.image-box{
+    position: relative;
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.text-overlay h3 {
+    margin: 0;
+}
+.text-overlay p {
+    margin-top: 8px;
+    padding: 6px 12px;
+    display: inline-block;
+}
 
 
 /* join section styles*/
@@ -95,4 +142,5 @@
 }
 .social-icon{
     padding: 20px;
+    
 }
