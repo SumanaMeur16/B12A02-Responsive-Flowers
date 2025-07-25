@@ -18,6 +18,11 @@
     background-color: #E95A08;
     border: none;
     text-align: center;
+    font-weight: 500;
+}
+.width{
+    width: 85%;
+    margin: 100px auto;
 }
 .card button{
     padding: 15px 90px;
@@ -41,7 +46,8 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 100px;
+    /* margin: auto 100px; */
+    margin: 0 auto;
 }
 .nav-link{
     text-decoration: none;
@@ -51,10 +57,11 @@ h2{
 /* banner styles */
 .banner{
     display: flex;
-    margin: 100px;
+    /* margin: 100px; */
     align-items: center;
+    margin: 80px auto;
 }
-.banner-content{
+.banner-description{
     margin: 0;
 }
 
@@ -83,7 +90,7 @@ h2{
 } */
 .plant-lover-main{
     display: flex;
-    margin: 100px;
+    /* margin: 100px; */
 }
 .plant-lover-content{
    padding-top: 50px;
@@ -98,9 +105,18 @@ h2{
 .badge{
     position: absolute;
     top: -15%;
-    left: 95%;
+    left: 80%;
     transform: translate(-50%);
     width: 210px;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* latest deals styles */
@@ -110,7 +126,7 @@ h2{
 }
 .deal-images{
     display: flex;
-    margin: 80px 100px;
+    /* margin: 80px 100px; */
     gap: 20px;
 }
 .deal-image{
@@ -119,6 +135,19 @@ h2{
 .image-box{
     position: relative;
 }
+.deal-ana{
+    padding-top: 16px;
+}
+.deal-zabo{
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+.deal-zabo-a{
+    font-size: 1.50rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
 .text-overlay{
     position: absolute;
     top: 50%;
@@ -135,11 +164,15 @@ h2{
     padding: 6px 12px;
     display: inline-block;
 }
+.image-box div a{
+    color: white; 
+}
 
 
 /* join section styles*/
 .join-bunch{
     background-image: url("../Images/news-letter-bg.png");
+    background-repeat: no-repeat;
     height: 530px;
     display: flex;
     justify-content: center;
@@ -161,7 +194,7 @@ input{
 /* footer styles */
 .footer-main{
     display: flex;
-    margin: 50px;
+    margin: 50px auto;
     justify-content: space-evenly;
 }
 .footer-links{
@@ -169,10 +202,47 @@ input{
 }
 .footer-link{
     text-decoration: none;
-    color: black;
+    color: black;  
 }
 .footer-links ul li{
-    list-style: none;   
+    list-style: none;
+    margin: 20px 0;
 }
+
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .deal-images, .plant-lover-main, .footer-main, .footer-links{
+        flex-direction: column;
+    }
+    .our-plants-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .zabo-plant{
+        width: 100%;
+    }
+    .card{
+        width: 110%;
+    }
+    input{
+        width: 50%;
+    }
+    .badge{
+        display: none;
+    }
+    .join-bunch{
+        height: 270px;
+    }
+    h1, h2{
+        font-size: 2rem;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
+
 
 
