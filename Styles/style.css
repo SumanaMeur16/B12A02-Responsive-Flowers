@@ -16,11 +16,11 @@
 .btn{
     color: white;
     background-color: #E95A08;
-    padding: auto 50px;
-    width: 270px;
-    height: 50px;
     border: none;
     text-align: center;
+}
+.card button{
+    padding: 15px 90px;
 }
 p{
     font-size: 1.20rem;
@@ -34,6 +34,7 @@ h1{
 }
 h2{
     font-size: 3rem;
+    margin: 0;
 }
 /* navber styles */
 .navbar{
@@ -53,6 +54,9 @@ h2{
     margin: 100px;
     align-items: center;
 }
+.banner-content{
+    margin: 0;
+}
 
 /* our plants styles */
 .our-plants-main{
@@ -71,13 +75,22 @@ h2{
 }
 
 /* plants lover styles */
-.plant-lover-main{
+/* .plant-lover-main{
     margin: 100px;
     display: flex;
+    justify-content: space-evenly;
     
+} */
+.plant-lover-main{
+    display: flex;
+    margin: 100px;
 }
 .plant-lover-content{
-
+   padding-top: 50px;
+   padding-left: 80px;
+}
+.plant-lover-content li{
+    font-size: 1.20rem;
 }
 .plant-lover-image{
     position: relative;
@@ -131,6 +144,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.join-field-section h2{
+    color: white;
+}
+.join-field-section button{
+    padding: 10px 50px;
+}
+input{
+    width: 500px;
+    padding: 10px 10px;
+    border: none;
 }
 
 /* footer styles */
@@ -144,11 +169,10 @@ h2{
 }
 .footer-link{
     text-decoration: none;
-    color: black; 
+    color: black;
 }
 .footer-links ul li{
     list-style: none;   
 }
-.social-icon{
-    
-}
+
+
