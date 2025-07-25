@@ -19,13 +19,14 @@
     border: none;
     text-align: center;
     font-weight: 500;
+    padding: 20px 30px;
 }
 .width{
     width: 85%;
     margin: 100px auto;
 }
 .card button{
-    padding: 15px 90px;
+    width: 100%;
 }
 p{
     font-size: 1.20rem;
@@ -53,6 +54,15 @@ h2{
     text-decoration: none;
     color: #252432;
     padding: 15px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.flex img{
+    width: 20px;
+    height: 20px;
 }
 /* banner styles */
 .banner{
@@ -221,14 +231,23 @@ input{
     .our-plants-card{
         grid-template-columns: repeat(2, 1fr);
     }
-    .zabo-plant{
+    .deal-image{
         width: 100%;
     }
+    .deal-zabo{
+        font-size: 1rem;
+    }
     .card{
-        width: 110%;
+        width: 100%;
+        height: 400px;
+
+    }
+    .card img{
+        width: 100%;
     }
     input{
         width: 50%;
+        padding: 10px 5px;
     }
     .badge{
         display: none;
@@ -241,6 +260,23 @@ input{
     }
     .hero-image{
         width: 100%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .flower-store{
+        width: 100%;
+    }
+    .plant-lover-content{
+        margin: 0;
+        padding: 0;
+    }
+    #new{
+        width: 20%;
+        padding: 10px 5px;
+    }
+    .join-field-section h2{
+        font-size: 1.5rem;
     }
 }
 
